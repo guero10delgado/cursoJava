@@ -227,12 +227,88 @@ public class ProyectoGuerrero {
         
         int i = 1;
         do{
-            System.out.println(i);
+            //System.out.println(i);
             i++;
         }while ( i <= 10 );
         
         
+        /* Metodos en Java */
+        
+        
+        // Invocamos el metodo
+        //imprimir();
+        
+        
+        //sumar(5, 10);
+        //sumar(20, 30);
+        
+        
+        int sum = sumar2(5,5);
+        //System.out.println(sum);
+        
+        
+        int sum1 = calcular(5, 4);
+        //System.out.println(sum1);
+        
+        double sum2 = calcular(5.5, 4.8);
+        //System.out.println(sum2);
+        
+        int sum3 = calcular(5, 4, 9);
+        //System.out.println(sum3);
+        
+        
+        /* Creacion de Clases */
+        
+        //Instancia
+        
+        Persona p = new Persona();
+        //Persona p2 = new Persona("Jorge");
+        
+        p.setNombre("Jorge");
+        p.setEdad(28);
+       
+        //System.out.println("mi nombre es: " + p.getNombre() + " y mi edad " + p.getEdad());
+        
         
     }
     
+    //Metodo
+    public static void imprimir(){
+        System.out.println("Imprimiendo...");
+    }
+    
+    //Metodo con Parametros
+    public static void sumar(int a, int b){
+        int suma = a + b;
+        System.out.println(suma);
+    }
+    
+    //Metodo con retorno
+    public static int sumar2(int a, int b){
+        int suma = a + b;
+        return suma;
+    }
+    
+    //Metodo Sobrecargado
+    public static int calcular(int a, int b){
+        int suma = a + b;
+        return suma;
+    }
+    
+    public static double calcular(double a, double b){
+        double suma = a + b;
+        return suma;
+    }
+    
+    public static int calcular(int a, int b, int c){
+        int suma = a + b + c;
+        return suma;
+    }
+    
+    
+    
+    
+    
 }
+
+
